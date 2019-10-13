@@ -1,0 +1,237 @@
+.top-section {
+  margin-top: 20%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 15px;
+  position: relative;
+
+  &__column-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__column-left {
+    width: 100%;
+  }
+
+  &__main-title {
+    color: $white;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  &__sub-title {
+    color: $light_text_color;
+    font-style: italic;
+    font-size: 16px;
+    margin-top: 5px;
+    line-height: normal;
+  }
+
+  &__description {
+    color: $light_text_color;
+    margin-top: 5%;
+    font-size: 16px;
+    font-style: italic;
+  }
+
+  &__button {
+    background: $main_button_bg;
+    color: $white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-bottom: 2px solid $dark_border_color;
+    border-radius: $borderRadius;
+    display: block;
+    padding: 15px 25px;
+    margin: 8% auto 0;
+    cursor: pointer;
+
+    &:hover {
+      outline: none;
+      background: $main_button_hover;
+      box-shadow: $shadow_button;
+    }
+  }
+
+  &__row {
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__bottom-description {
+    color: $light_text_color;
+    font-style: italic;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  &__right-title {
+    color: $white;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  &__right-sub-title {
+    color: $light_text_color;
+    font-style: italic;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-section {
+    margin-top: 12%;
+
+    &__main-title {
+      text-align: inherit;
+      margin-bottom: 0;
+    }
+
+    &__column-right {
+      width: 30%;
+      align-items: flex-end;
+    }
+
+    &__column-left {
+      width: 70%;
+    }
+
+    &__item {
+      width: 100%;
+      max-width: 160px;
+      padding-top: 10px;
+      margin-bottom: 35px;
+      text-align: inherit;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__button {
+      margin: 8% 0 0;
+    }
+
+    &__row {
+      margin-top: 10%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    &__bottom-description {
+      width: 50%;
+      max-width: 460px;
+      padding-right: 15px;
+      text-align: inherit;
+    }
+  }
+}
+
+.info-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 45px;
+
+  &__phones {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    color: $white;
+    font-size: 24px;
+  }
+
+  &__link {
+    color: $white;
+    padding: 0 8px;
+
+    &:hover, &:focus {
+      color: $nav_links_color;
+    }
+  }
+
+  &--style {
+    margin-left: 8px;
+    border-right: 1px solid $border_glass_color;
+  }
+}
+
+.custom-line {
+  &__description {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .custom-line {
+    &::after {
+      content: '';
+      width: 1px;
+      height: 100%;
+      background-color: #377FC1;
+      opacity: 0.3;
+      position: absolute;
+      left: -65px;
+      top: calc(20% + 55px);
+    }
+
+    &__description {
+      transform: rotate(-90deg);
+      color: $white;
+      position: absolute;
+      left: - 120px;
+      top: 16%;
+      text-transform: uppercase;
+      font-size: 12px;
+      z-index: 5;
+      width: 110px;
+      display: block;
+    }
+  }
+  .module-section {
+    &.custom-line {
+      &::after {
+        height: 85%;
+        top: 47%;
+      }
+      &--offset {
+        &::after {
+          top: 60%;
+        }
+        & .custom-line__description {
+          top: 45%;
+        }
+      }
+    }
+
+    & .custom-line__description {
+      color: $themeColorOne;
+      top: 32%;
+    }
+  }
+}

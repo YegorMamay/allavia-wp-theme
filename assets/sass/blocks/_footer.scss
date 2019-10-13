@@ -1,0 +1,120 @@
+.footer {
+  background-color: $white;
+  padding-top: 15px;
+  margin-top: auto;
+  width: 100%;
+
+  &__top-section {
+    padding: 5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__top-button {
+    background: $main_button_bg;
+    color: $white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-bottom: 2px solid $dark_border_color;
+    border-radius: $borderRadius;
+    display: block;
+    padding: 15px 25px;
+    cursor: pointer;
+    margin: 15px auto 0;
+
+    &:hover, &:focus {
+      outline: none;
+      background: $main_button_hover;
+      box-shadow: $shadow_button;
+      color: $white;
+    }
+  }
+
+  &__bottom-section {
+    background-color: $footerBgColor;
+    color: $white;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+
+  &__text {
+    font-weight: 500;
+  }
+
+  & .right-block__button {
+    background: $white;
+  }
+
+  & .right-block__button-title {
+    color: $themeColorOne;
+    font-weight: 500;
+  }
+
+  & .right-block__icon-wrapper {
+    border-color: #dedede;
+  }
+
+  & .logo {
+    margin-top: -10px;
+    display: none;
+  }
+
+  &__top-caption {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .footer {
+    &__top-button {
+      margin: 0;
+    }
+  }
+}
+
+.copyright {
+  text-align: center;
+  color: $footerFontColor;
+  display: none;
+
+  p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  a {
+    color: $footerFontColor;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      color: $footerLinkColorActive;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .copyright {
+    display: block;
+  }
+  .footer {
+    & .logo {
+      display: block;
+    }
+
+    &__top-caption {
+      text-align: inherit;
+    }
+  }
+}
