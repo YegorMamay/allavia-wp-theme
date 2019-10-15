@@ -5,7 +5,7 @@
                     <p class="module-section__title h5">Подпишитесь на канал с горячими предложениями</p>
                     <div class="module-section__description">Получайте новости об акциях и скидках самых популярных авиакомпаний</div>
                 </div>
-                <a href="#" class="footer__top-button">Подписаться на новости</a>
+                <a href="#" class="footer__top-button">Підписатися на новини</a>
             </div>
         </div>
         <div class="footer__bottom-section">
@@ -17,19 +17,19 @@
                     </span>
                         <span class="logo__sub-title">air tickets</span>
                     </div>
-                    <div class="footer__text">&copy; 2019. Все права защищены.</div>
+                    <div class="footer__text">&copy; 2009-<?php echo date('Y'); ?>. Усі права захищено.</div>
                     <div class="copyright">
-                        <p>Сайт разработан
+                        <p>Сайт розроблено
                             <a href="https://brainworks.pro/" target="_blank">“Brain Works”</a>
                         </p>
                     </div>
                     <div class="right-block">
-                        <div class="right-block__title">Забронировать перелет через:</div>
+                        <div class="right-block__title">Забронювати переліт у:</div>
                         <a href="#" class="right-block__button">
                             <div class="right-block__icon-wrapper">
                                 <img class="right-block__icon" src="/wp-content/themes/allavia-wp-theme/assets/img/footer_icon.svg" alt="support">
                             </div>
-                            <span class="right-block__button-title">Чат-бот</span>
+                            <span class="right-block__button-title">Чат-бота</span>
                         </a>
                     </div>
                 </div>

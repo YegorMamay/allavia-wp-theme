@@ -15,18 +15,14 @@
         <h1 class="top-section__main-title h4">Бронирование и продажа авиабилетов на все международные и внутренние рейсы!</h1>
         <p class="top-section__sub-title">Обслуживание корпоративных и индивидуальных клиентов.</p>
         <div class="top-section__description">Просто сообщите нам направление и дату, и мы сэкономим ваше время на поиски удобного и недорого перелета.</div>
-        <button type="button" class="top-section__button">Получить консультацию</button>
+        <button type="button" class="top-section__button">Отримати консультацію</button>
         <div class="top-section__row">
             <div class="top-section__bottom-description">
                 Наша компания была основана в 2009 году.
-                Мы специализируемся на бронировании и
-                продаже авиабилетов на все международные
-                и внутренние рейсы.
             </div>
             <div class="top-section__bottom-description">
-                Наши сотрудники прошли специальное
-                обучение и имеют большой (более 15 лет)
-                опыт работы в сфере продаж авиабилетов.
+                Наши сотрудники прошли специальное обучение
+                и имеют большой (более 15 лет).
             </div>
         </div>
     </div>
@@ -207,7 +203,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="module-section__button" type="button">Получить помощь</button>
+                    <button class="module-section__button" type="button">Отримати допомогу</button>
                 </div>
             </div>
         </div>
