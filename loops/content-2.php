@@ -10,10 +10,10 @@
                             </section>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                            <header>
-                                <h3><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h3>
+                            <div>
+                                <a class="title-link" href="<?php the_permalink(); ?>"><?php the_title() ?></a>
                                 <div class="sp-xs-1 sp-sm-1 sp-md-1 sp-lg-1 sp-xl-1"></div>
-                                <p><?php the_excerpt(); ?></p>
+                                <div class="description"><?php the_excerpt(); ?></div>
                                 <?php /*
                         <h5>
                           <em>
@@ -22,7 +22,7 @@
                           </em>
                         </h5>
                         */ ?>
-                            </header>
+                            </div>
                             <?php /*
                     <footer>
                         <p class="text-muted">

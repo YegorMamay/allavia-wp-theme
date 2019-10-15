@@ -70,14 +70,14 @@ if (!function_exists('bw_social_shortcode')) {
             $items = '';
 
             foreach (get_social() as $name => $social) {
-	            $icon_fallback = sprintf( '<i class="%s" aria-hidden="true"></i>', esc_attr( $social['icon'] ) );
+	            $icon_fallback = sprintf( '<i class="%s info-section__icon" aria-hidden="true"></i>', esc_attr( $social['icon'] ) );
 
                 $icon = !empty($social['icon-html']) ? strip_tags($social['icon-html'], '<i>') : $icon_fallback;
 
                 $items .= sprintf(
                     '<li class="social-item">%s</li>',
                     sprintf(
-                        '<a class="social-link social-%s" href="%s" target="_blank" rel="nofollow noopener" aria-label="%s">%s</a>',
+                        '<a class="social-link info-section__link social-%s" href="%s" target="_blank" rel="nofollow noopener" aria-label="%s">%s</a>',
                         esc_attr($name),
                         esc_attr(esc_url($social['url'])),
 	                    esc_attr($social['text']),
@@ -86,7 +86,7 @@ if (!function_exists('bw_social_shortcode')) {
                 );
             }
 
-            $output = sprintf('<ul class="social">%s</ul>', $items);
+            $output = sprintf('<ul class="info-section__social">%s</ul>', $items);
         }
 
         return $output;
@@ -122,7 +122,7 @@ if (!function_exists('bw_phone_shortcode')) {
                 $items .= sprintf(
                     '<li class="phone-item">%s</li>',
                     sprintf(
-                        '<a class="phone-number" href="tel:%s">%s</a>',
+                        '<a class="phone-number info-section__link" href="tel:%s">%s</a>',
                         esc_attr(get_phone_number($phone)),
                         esc_html($phone)
                     )
@@ -572,11 +572,11 @@ if (!function_exists('bw_reviews_shortcode')) {
 
                 $output .= '<div id="post-' . get_the_ID() . '" ' . $post_class . '>';
 
-                $output .= '<div class="review-client">';
+                $output .= '<div class="info-section__social">';
                 $output .= get_the_post_thumbnail(null, 'thumbnail', array('class' => 'review-avatar'));
                 if (count($social)) {
-                    $output .= '<a class="review-social" href="' . esc_url($social['url']) . '" target="_blank" rel="noopener noreferrer">';
-                    $output .= '<i class="fab ' . esc_attr($social['icon']) . '" aria-hidden="true"></i>';
+                    $output .= '<a class="info-section__link" href="' . esc_url($social['url']) . '" target="_blank" rel="noopener noreferrer">';
+                    $output .= '<i class="info-section__icon fab ' . esc_attr($social['icon']) . '" aria-hidden="true"></i>';
                     $output .= '</a>';
                 }
                 $output .= '</div>';
