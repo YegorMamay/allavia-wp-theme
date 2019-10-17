@@ -2,8 +2,8 @@
         <div class="container container--padding">
             <div class="footer__top-section">
                 <div class="footer__top-caption">
-                    <p class="module-section__title h5">Подпишитесь на канал с горячими предложениями</p>
-                    <div class="module-section__description">Получайте новости об акциях и скидках самых популярных авиакомпаний</div>
+                    <p class="module-section__title h5"><?php the_field('sn_six_block_title'); ?></p>
+                    <div class="module-section__description"><?php the_field('sn_six_block_desc'); ?></div>
                 </div>
                 <a href="#" class="footer__top-button">Підписатися на новини</a>
             </div>
