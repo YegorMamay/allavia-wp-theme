@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>">
+
+    <meta property="og:locale" content="uk_UA" />
+    <meta property="og:locale:alternate" content="uk_UA" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Бронювання та продаж авіаквитків на усі міжнародні та внутрішні рейси" />
+    <meta property="og:description" content="Просто повідомте нам ваш напрямок та дату, а ми зекономимо ваш час на пошук зручного та недорогого перельоту">
+    <meta property="og:url" content="http://all-avia.com/" />
+    <meta property="og:site_name" content="Allavia" />
+    <meta property="og:image" content="/wp-content/uploads/allavia-cover.jpg" />
+    <meta property="og:image:secure_url" content="/wp-content/uploads/allavia-cover.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="628" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Бронювання та продаж авіаквитків на усі міжнародні та внутрішні рейси" />
+    <meta name="twitter:image" content="/wp-content/uploads/allavia-cover.jpg" />
+
     <link rel="shortcut icon" href="<?php echo esc_url(get_template_directory_uri() . '/wp-content/themes/allavia-wp-theme/assets/img/favicon.ico'); ?>"
           type="image/x-icon">
     <link rel="icon" href="<?php echo esc_url(get_template_directory_uri() . '/wp-content/themes/allavia-wp-theme/assets/img/favicon.ico'); ?>"

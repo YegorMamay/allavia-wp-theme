@@ -136,8 +136,7 @@
                 <div class="module-section custom-line custom-line--offset">
                     <div class="custom-line__description"><?php the_field('sn_block_name_5'); ?></div>
                     <p class="module-section__title h5"><?php the_field('sn_five_block_title'); ?></p>
-                    <div class="sp-xs-8"></div>
-                    <div class="sp-xs-5"></div>
+                    <div class="sp-xs-1 sp-sm-1 sp-md-6 sp-lg-8 sp-xl-8"></div>
                     <?php echo do_shortcode('[show-logos]'); ?>
                 </div>
             </div>
