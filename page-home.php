@@ -130,7 +130,7 @@
             </div>
         </div>
     </div>
-    <div class="module-overlay">
+    <div class="module-overlay" id="clients">
         <div class="container container--padding">
             <div class="row">
                 <div class="module-section custom-line custom-line--offset">
