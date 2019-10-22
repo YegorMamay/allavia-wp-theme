@@ -142,6 +142,27 @@
             </div>
         </div>
     </div>
+    <div class="contact-form">
+       <div class="sp-xs-10"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3"></div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <?php
+                    if (function_exists("add_formcraft_form")) {
+                        add_formcraft_form("[fc id='7'][/fc]");
+                    }
+                ?>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3"></div>
+            </div>
+        </div>
+      <div class="sp-xs-10"></div>
+    </div>
+      <hr>
+
+
+
 </div>
 </div>
 

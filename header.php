@@ -60,12 +60,12 @@
             </nav>
         <?php } ?>
                             <div class="right-block">
-                                <div class="right-block__title">Забронювати переліт у:</div>
+                                <div class="right-block__title">Забронювати переліт через:</div>
                                 <a href="#" class="right-block__button">
                                     <div class="right-block__icon-wrapper">
                                         <img class="right-block__icon" src="/wp-content/themes/allavia-wp-theme/assets/img/live_support.svg" alt="support">
                                     </div>
-                                    <span class="right-block__button-title">Чат-бота</span>
+                                    <span class="right-block__button-title">Чат-бот</span>
                                 </a>
                                 <button type="button" class="right-block__button right-block--mobile js-nav">
                                     <i class="fas fa-bars"></i>
