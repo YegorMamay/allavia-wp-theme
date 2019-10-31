@@ -22,9 +22,9 @@
     <meta name="twitter:title" content="Бронювання та продаж авіаквитків на усі міжнародні та внутрішні рейси" />
     <meta name="twitter:image" content="/wp-content/uploads/allavia-cover.jpg" />
 
-    <link rel="shortcut icon" href="<?php echo esc_url(get_template_directory_uri() . '/wp-content/themes/allavia-wp-theme/assets/img/favicon.ico'); ?>"
+    <link rel="shortcut icon" href="<?php echo esc_url(get_template_directory_uri() . '/assets/img/favicon.ico'); ?>"
           type="image/x-icon">
-    <link rel="icon" href="<?php echo esc_url(get_template_directory_uri() . '/wp-content/themes/allavia-wp-theme/assets/img/favicon.ico'); ?>"
+    <link rel="icon" href="<?php echo esc_url(get_template_directory_uri() . '/assets/img/favicon.ico'); ?>"
           type="image/x-icon">
     <?php wp_head(); ?>
 </head>

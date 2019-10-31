@@ -12761,3 +12761,33 @@ img {
 .wp-post-image {
   margin-bottom: 30px;
 }
+
+/* Custom style arrows slider */
+.bx-controls-direction {
+  position: relative;
+  bottom: -65px;
+}
+
+.bx-controls-direction .bx-prev,
+.bx-controls-direction .bx-next {
+  width: auto !important;
+  height: auto !important;
+  position: absolute;
+  text-indent: inherit !important;
+  margin: 0 !important;
+}
+
+.bx-controls-direction .bx-prev {
+  left: 0 !important;
+  background: url('/wp-content/themes/allavia-wp-theme/assets/img/arrow-prev.png')no-repeat !important;
+  background-position-y: center !important;
+  padding-left: 30px;
+}
+.bx-controls-direction .bx-next {
+  right: 0 !important;
+  background: url('/wp-content/themes/allavia-wp-theme/assets/img/arrow-next.png')no-repeat !important;
+  background-position-y: center !important;
+  background-position-x: 65px !important;
+  padding-right: 30px;
+
+}
