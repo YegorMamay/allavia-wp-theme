@@ -61,7 +61,7 @@
         <?php } ?>
                             <div class="right-block">
                                 <div class="right-block__title">Забронювати переліт через:</div>
-                                <a href="#" class="right-block__button">
+                                <a href="https://t.me/Allavia_bot" target="_blank" class="right-block__button">
                                     <div class="right-block__icon-wrapper">
                                         <img class="right-block__icon" src="/wp-content/themes/allavia-wp-theme/assets/img/live_support.svg" alt="support">
                                     </div>
